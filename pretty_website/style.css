@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	padding-left: 15%;
+	padding-right: 15%;
+	background: black;
+}
+
+body {
+	/* margin: 0; */
+	/* padding: 0; */
+	font-style: Arial;
+	background: white;
+	height: 100%;
+	float: left;
+}
+
+a {
+	padding: 6px 10px;
+	color: gray;
+	text-decoration: none;
+	/* display: block; */
+}
+
+a:hover {
+	color: white;
+	background:  #c1c1c1;
+}
+
+#site-header {
+	width: 100%;
+	position: relative;
+/* background: url(headerBackground.jpg); */
+}
+
+	#site-header img {
+		width: 100%;
+		/* margin: 0; */
+	}
+
+	#site-header h1 {
+		color: white;
+		position: absolute;
+		bottom: 10%;
+		right: 5%;
+	}
+
+	#site-header nav {
+		width: 100%;
+		text-transform: uppercase;
+		box-shadow: 3px 3px 3px #e1e1e1;
+	}
+
+	nav ul {
+		/* margin: 0; */
+		list-style-type: none;
+		/* padding-left: 0; */
+	}
+
+		nav ul li {
+			/* margin: 0; */
+			background: linear-gradient(#f1f1f1, #e1e1e1);
+			border: 1px solid white;
+			float: left;
+		}
+
+main {
+	width: 70%;
+	float: left;
+}
+
+	main p {
+	margin-top: 10px;
+	}
+	
+	
+
+section {
+	margin-top: 20px;
+	margin-left: 30px;
+	padding: 10px;
+	border: 2px solid #e1e1e1;
+	border-radius: 10px;
+	float:left;
+}
+
+	section header h1 {
+		color: #70f140;	
+		/* margin: 0; */
+		float: left;
+	}
+	#site-presentation header, aside header {
+		text-transform: uppercase;
+	}
+	#products header {
+		text-transform: capitalize;
+	}
+	
+	#site-presentation p {
+		margin-top: 30px;
+	}
+
+article {
+	margin: 10px;
+	float: left;
+}
+
+	article header {
+		font-weight: bold;
+		text-transform: none;
+	}
+
+	article img {
+		float: left;
+		margin-right: 20px;
+	}
+	
+	
+	article footer a {
+		color: green;
+		text-decoration: underline;
+	}
+	article footer a:hover {
+		color: green;
+		background: none;
+	}
+	
+aside {
+	width: 25%;
+	float: left;
+}
+
+#news {
+	background: #f1f1f1;
+}
+
+	aside footer span {
+		font-weight: bold;
+	}
+
+#site-footer {
+	margin-top: 20px; 
+	width: 100%;
+	font-size: 0.9em;
+	background: linear-gradient( #70d140, green);
+	float: left;
+}
+	#site-footer p {
+		margin-top: 30px;
+		margin-bottom: 60px;
+		margin-left: 90px;
+	}
+
+

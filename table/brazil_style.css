@@ -1,0 +1,60 @@
+/*borders in table; import symbols and buttons/draw buttons on canvas(and place it within each of 5 cells)*/
+
+body{
+	background-color: rgb(0,200,0, 0.8);
+}
+
+#wrapper{
+	margin:10px, 10px;
+	padding: 0;
+}
+
+table{
+	font-family: serif;
+	/*box-shadow: 20px 20px 30px coral;*/
+}
+
+table, th, td{
+	border: 3px outset rgb(50, 60, 50, 0.8); 
+	border-collapse: collapse;
+} 
+th{
+	font-size: 35px;
+	background-color: rgb(250,200,0);
+	padding: 20px;
+}
+
+td{
+	font-size: 25px;
+	padding: 20px;
+}
+
+tr:nth-child(odd){
+	background-color: white;
+}
+tr:nth-child(even) {
+	background-color: rgb(200,210,200);
+}
+
+/*first and fifth cols*/
+th:nth-child(1) {
+	text-align: right;
+}
+
+td:nth-child(1), td:nth-child(5) {
+	text-align: right;
+	width: 150px;
+}
+
+/*third and seventh cols*/
+th,td:nth-child(3), th,td:nth-child(7){
+	text-align:left;
+}
+
+/*even cols and fifth th*/
+th, td:nth-child(even){
+	text-align: center;
+}
+th:last-child {
+	text-align:center;
+}

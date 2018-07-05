@@ -1,0 +1,155 @@
+/*
+-bgr header
+-nav menu text of ul to the left
+-a on hover: whole width
+-aside nav ul li a : different colors, img
+-no space after First letter in div of article 
+-background image shadow (li)
+-dobavqm uslovie na zad
+*/
+a {
+	padding: 5px 3px;
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: gray;
+}
+
+body {
+	margin: 0;
+	background: url(colorful_dots_on_black.jpg);
+	/* Those are deafaults: */
+	/* background-size: auto; */
+	/* background-repeat: repeat; */
+}
+
+#page-header {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: yellow;
+	background: green;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	border-left: 450px solid red;
+	border-right: 450px solid blue;
+}
+	
+section{
+	margin: 10px;
+	margin-left: 0;
+	width: 80%; 
+	float: left;
+}
+
+article {
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+	article header {
+		padding: 10px 10px;
+		font-size: 25px;
+		border-radius: 10px;
+	}
+	#webColors {
+		color: white;
+		background-color: red;
+	}
+	#webSafeColors{
+		background-color: orange;
+	}
+	#RGB{
+		background-color: yellow;
+	}
+	#RGBA{
+		color: white;
+		background-color: green;
+	}
+	#HSLHSV {
+		color: white;
+		background: blue;
+	}
+	
+	section article:last-child header {
+		color:white;
+		background-color: purple;
+	}
+	
+		section article div:first-letter {
+			font-style: italic;
+			font-size: 40px;
+			white-space: none;
+		}
+		
+		section article footer a {
+			color: gray;
+			text-decoration: underline;
+		}
+		
+article, aside {
+	background: rgba(255,255,255, 0.85);
+	border-radius: 20px;
+}
+
+aside {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 10px;
+	padding: 0;
+	float: left;
+	background: rgba(255,255,255, 0.85);
+	border-radius: 20px;
+	width: 15%;
+}
+
+	aside nav {
+		margin: 0;
+		padding: 10px 20px;
+	}
+
+		aside nav header {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: left;
+			text-decoration: underline;
+		}
+	
+		aside nav ul {
+			padding-left: 0;
+			position: relative; left: 0px;
+			list-style-type:none;
+			/*list-style-image: url('kisspng-computer-icons-css-sprites-chimichanga-5accbe42bc0ec2.3018086915233674907703.png');
+			*/list-style-position: inside;
+		}
+		aside nav ul li{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		aside nav ul li:hover {
+			border-radius: 5px;
+			line-height: 30px;
+		}
+		
+		aside nav ul li:nth-child(3n-2):hover {
+			background: red;
+		}
+		aside nav ul li:nth-child(3n-1):hover {
+			background: green;
+		}
+		aside nav ul li:nth-child(3n):hover {
+			background: blue;
+		}
+		
+		aside nav ul li:before{
+			content:'';
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			background-image: url('kisspng-computer-icons-css-sprites-chimichanga-5accbe42bc0ec2.3018086915233674907703.png');
+			/*contain: Resize the background image to make sure the image is fully visible*/
+			background-size: contain;
+			background-repeat: no-repeat;
+		}

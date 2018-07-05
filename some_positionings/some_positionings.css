@@ -1,0 +1,132 @@
+/**/
+
+#wrapper {
+	height: 100%;
+	/* width: 100%; */
+	margin: auto;
+	padding: 50px;
+	font-family: Arial, sans-serif;
+	text-shadow: 10px 10px 10px rgb(200,200,200);
+	border-top: 5px dashed yellow;
+	border-right: 10px inset green;
+	border-bottom: 10px ridge blue;
+	border-left: 10px dashed red;
+	box-shadow: 20px 20px 10px rgb(200,200,200);
+	float: left;
+}
+
+#outer-paragraph {
+	margin-top: auto; /*reset.css*/
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+#blue {
+	box-sizing: border-box;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	border: 3px solid blue;
+	border-radius: 90px;
+	float: left; 
+}
+
+#green {
+	box-sizing: border-box;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	border: 3px solid green;
+	border-radius: 90px;
+	float: left;
+
+}
+#yellow {
+	box-sizing: border-box;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	border: 3px solid yellow;
+	border-radius: 90px;
+	float: left;
+}
+
+#inner-paragraph { /*need reset.css*/
+	margin: auto;
+	text-align: center;
+}
+#red {
+	font-size: 20px;
+	box-sizing: border-box;
+	width:100%;
+	margin: 0;
+	padding: 20px 50px;
+	border: 3px solid red;
+	border-radius: 90px;
+	float: left;
+	position: relative;
+}
+
+#nonbutton01, #nonbutton02 {
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding: 5px 30px;
+	text-shadow: none;
+	background: rgb(200,130,0);
+	border: 5px outset orange;
+	float: left;
+}
+#nonbutton01 {
+	margin-right: 20px;
+}
+/*baloons*/
+/* div { */
+	/* box-sizing: border-box; */
+/* } */
+.baloon, .inner-baloon {
+	margin: 0;
+	box-sizing: border-box;
+	background: rgba(200,200,200,0.8);
+	border-radius: 90px;
+	z-index:2;
+}
+.baloon {
+	padding: 10px; /*nope*/
+}
+.inner-baloon {
+	width: auto; /*margin auto*/
+	height:95%; /**/
+	border: 3px dashed white;
+	/* position: absolute; */
+}
+
+#small-baloon {
+	width: 1em;
+	height: 1em;
+	position: absolute; left: 75%; top: 20%; 
+}
+
+#middle-baloon {
+	width: 3em;
+	height: 3em;
+	position: absolute; left: 85%; top:-25%;
+}
+
+#large-baloon {
+	width: 8em;
+	height: 5em;
+	border-radius: 45px;
+	position: absolute; left: 100%; top: -75%; 
+}
+#inner-large-baloon {
+	padding-top: 3%;
+	text-align: center; 
+	border-radius: 45px;
+	color: white;
+	font-weight: 900;
+	text-shadow: none; 
+}
+
+.upper {
+	text-transform: uppercase;
+}
