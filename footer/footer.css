@@ -1,4 +1,8 @@
-/*TODO: animations (add arrow pointing to the footer too)*/
+/*TODO: 
+-copyright
+-edit the font size of the root (13px) to a smaller one & check out what happens with the footer position - not at the button any more => when 13px
+its good for my screen but not for a larger one. BUT THE ANIMATION LOOKS COOLER THIS WAY :-)
+*/
 
 * {
 	margin: 0;
@@ -7,35 +11,51 @@
 }
 
 body {
+	font-size: 13px;
 	font-family: monospace;
-	height: 300px;
-	background: #556677;
+	background: #b5b5b5;
+	animation-name: body-background;
+	animation-duration: 5s;
+
+
 }
 
 div {
-	display: flex;
 	width: 70%;
 	margin-left:5%;
-	background: white;
-	font-size: 2.5em;
+	background: #556677;
+	animation-name: div-background;
+	animation-duration: 7s;
 }
-@keyframe {
-		10% {
-			background: white;
-		}
-		25% {
-			background: #556677;
-		}
-		50% {
-			background: black;
-		}
+
+	h1{
+		padding: 3em;
+		padding-left: 20%; /*with this padding the two words somehow are aligned below eachother when reso < 700px and don't show ouotside the div-box*/		
+		font-size: 5em;
+		color: #b5b5b5;
+		text-align: center;
+		animation-name: h1-padding;
+		animation-duration: 5s;
+	}
+	
+@keyframes body-background { 
+	0%  {background: white;}
+	10% {background: orange;}
+	25% {background: #556677;}
+	50% {background: white;}
+	100%{background: #b5b5b5;} /*back to default values for smoother animation*/
 }
-h1{
-	padding: 3em;
-	font-size: 2em;
-	color: #b5b5b5;
-	text-align: center;
-	background: black;
+@keyframes div-background{ 
+	0%  {background: white;}
+	25% {background: orange;}
+	100%{background: #556677;} /*back to default values for smoother animation*/
+}
+
+@keyframes h1-padding {
+	0%  {padding-top: 0;}
+	25% {padding-top: 3em;}
+	50% {padding-top: 5em; padding-bottom: 0;}
+	100% {padding: 3em; padding-left: 20%;} /*back to default values for smoother animation*/
 }
 
 a {
@@ -57,12 +77,11 @@ a:hover {
 	padding: 2em 2.5em 2em 3em;
 	background: #112233;
 	flex-wrap: wrap;
-	align-content: center;
-	bottom: 0;
+	align-content: center; /*......................................................*/
 }
 
 .flex-content {
-	flex: 10% 1 1;
+	flex: 1 1;
 }
 
 .flex-content header {
@@ -95,7 +114,7 @@ ul li {
 }
 
 @media screen and (max-width: 700px) {
-	div, #container {
+	 #container {
 		flex-direction: column;
 	}
 }
