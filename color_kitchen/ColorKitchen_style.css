@@ -1,12 +1,4 @@
-/*
--bgr header
--nav menu text of ul to the left
--a on hover: whole width
--aside nav ul li a : different colors, img
--no space after First letter in div of article 
--background image shadow (li)
--dobavqm uslovie na zad
-*/
+
 a {
 	padding: 5px 3px;
 	color: black;
@@ -19,9 +11,6 @@ a:visited{
 body {
 	margin: 0;
 	background: url(colorful_dots_on_black.jpg);
-	/* Those are deafaults: */
-	/* background-size: auto; */
-	/* background-repeat: repeat; */
 }
 
 #page-header {
@@ -74,7 +63,7 @@ article {
 	}
 	
 	section article:last-child header {
-		color:white;
+		color: white;
 		background-color: purple;
 	}
 	
@@ -121,8 +110,7 @@ aside {
 			padding-left: 0;
 			position: relative; left: 0px;
 			list-style-type:none;
-			/*list-style-image: url('kisspng-computer-icons-css-sprites-chimichanga-5accbe42bc0ec2.3018086915233674907703.png');
-			*/list-style-position: inside;
+			list-style-position: inside;
 		}
 		aside nav ul li{
 			margin-top: 5px;

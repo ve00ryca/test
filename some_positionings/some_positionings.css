@@ -1,8 +1,5 @@
-/**/
 
 #wrapper {
-	height: 100%;
-	/* width: 100%; */
 	margin: auto;
 	padding: 50px;
 	font-family: Arial, sans-serif;
@@ -16,7 +13,7 @@
 }
 
 #outer-paragraph {
-	margin-top: auto; /*reset.css*/
+	margin-top: auto; 
 	text-transform: uppercase;
 	font-size: 40px;
 }
@@ -51,7 +48,7 @@
 	float: left;
 }
 
-#inner-paragraph { /*need reset.css*/
+#inner-paragraph { 
 	margin: auto;
 	text-align: center;
 }
@@ -79,25 +76,21 @@
 #nonbutton01 {
 	margin-right: 20px;
 }
-/*baloons*/
-/* div { */
-	/* box-sizing: border-box; */
-/* } */
+
 .baloon, .inner-baloon {
 	margin: 0;
 	box-sizing: border-box;
 	background: rgba(200,200,200,0.8);
 	border-radius: 90px;
-	z-index:2;
+	z-index: 2;
 }
 .baloon {
-	padding: 10px; /*nope*/
+	padding: 10px; 
 }
 .inner-baloon {
-	width: auto; /*margin auto*/
-	height:95%; /**/
+	width: auto; 
+	height:95%; 
 	border: 3px dashed white;
-	/* position: absolute; */
 }
 
 #small-baloon {

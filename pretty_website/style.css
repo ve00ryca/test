@@ -11,8 +11,6 @@ html {
 }
 
 body {
-	/* margin: 0; */
-	/* padding: 0; */
 	font-style: Arial;
 	background: white;
 	height: 100%;
@@ -23,7 +21,6 @@ a {
 	padding: 6px 10px;
 	color: gray;
 	text-decoration: none;
-	/* display: block; */
 }
 
 a:hover {
@@ -34,12 +31,10 @@ a:hover {
 #site-header {
 	width: 100%;
 	position: relative;
-/* background: url(headerBackground.jpg); */
 }
 
 	#site-header img {
 		width: 100%;
-		/* margin: 0; */
 	}
 
 	#site-header h1 {
@@ -56,13 +51,10 @@ a:hover {
 	}
 
 	nav ul {
-		/* margin: 0; */
 		list-style-type: none;
-		/* padding-left: 0; */
 	}
 
 		nav ul li {
-			/* margin: 0; */
 			background: linear-gradient(#f1f1f1, #e1e1e1);
 			border: 1px solid white;
 			float: left;
@@ -90,7 +82,6 @@ section {
 
 	section header h1 {
 		color: #70f140;	
-		/* margin: 0; */
 		float: left;
 	}
 	#site-presentation header, aside header {
