@@ -1,0 +1,36 @@
+
+nav {
+	margin: auto;
+	padding: 1em 0;
+	border-radius: 5px;
+}
+a {
+	color: gray;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	display: block;
+}
+
+a:hover {
+	color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+.button {
+	width: 8%;
+	margin-left: 46%;
+	padding: 0.5em;
+	background: rgba(255,255,255,0.95);
+	box-shadow: 0 0 15px 5px white;
+	border: 0;
+	border-radius: 5px;
+}	
+
+@media screen and (max-width: 700px){
+	.button{
+		width: 24%;
+	}
+}

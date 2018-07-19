@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+	<link type="text/css" rel="stylesheet" href="../css/form.css" />
+	<link type="text/html" rel="stylesheet" href="../gallery.html" />
+	<link type="text/css" rel="stylesheet" href="../css/nav.css" />
+</head>
+	
+<body>
+	<nav>
+		<button id="home-button" class="button"><a href="../gallery.html">Back to Gallery</a></button>
+	</nav>
+	
+	<form method="get" action="">
+		<fieldset>
+			<legend>Johny the Legend</legend>
+			<label for="firstname">Your first name is: </label></label>
+			<input type="text" name="name" id="firstname" placeholder="first name" pattern="[a-zA-Z]{3,}" title="Letters only" required="true" />
+			<br/>
+			<label for="lastname">Your last name is: </label></label></label>
+			<input type="text" name="name" id="lastname" placeholder="family name" pattern="[a-zA-Z]{3,}" title="Letters only" required="true" />
+			<br/>
+			<label for="fg">Ladies here: </label>
+			<input type="radio" name="gender" id="fg" required="true"/>
+			<label for="mg">Gents here: </label>
+			<input type="radio" name="gender" id="mg" required="true" />
+			<br/>	
+		</fieldset>
+		<fieldset>
+			<legend>Select you favourite pic from the gallery and suggest title for it:</legend>
+			<select required="true">
+				<option value="1">Image 1<img src="../images/lotus.jpg" /></option>
+				<option value="2">Image 2<img src="../images/lotus.jpg" /></option>
+				<option value="3">Image 3<img src="../images/lotus.jpg" /></option>
+				<option value="4">Image 4<img src="../images/lotus.jpg" /></option>
+				<option value="5">Image 5<img src="../images/lotus.jpg" /></option>
+				<option value="6">Image 6<img src="../images/lotus.jpg" /></option>
+				<option value="7">Image 7<img src="../images/lotus.jpg" /></option>
+				<option value="8">Image 8<img src="../images/lotus.jpg" /></option>
+				<option value="9">Image 9<img src="../images/lotus.jpg" /></option>
+				<option value="10">Image 10<img src="../images/lotus.jpg" /></option>
+				<option value="11">Image 11<img src="../images/lotus.jpg" /></option>
+				<option value="12">Image 12<img src="../images/lotus.jpg" /></option>
+				<option value="13">Image 13<img src="../images/lotus.jpg" /></option>
+				<option value="14">Image 14<img src="../images/lotus.jpg" /></option>
+				<option value="15">Image 15<img src="../images/lotus.jpg" /></option>
+				<option value="16">Image 16<img src="../images/lotus.jpg" /></option>
+				<option value="17">Image 17<img src="../images/lotus.jpg" /></option>
+				<option value="18">Image 18<img src="../images/lotus.jpg" /></option>
+				<option value="19">Image 19<img src="../images/lotus.jpg" /></option>
+				<option value="20">Image 20<img src="../images/lotus.jpg" /></option>
+				<option value="21">Image 21<img src="../images/lotus.jpg" /></option>
+				<option value="22">Image 22<img src="../images/lotus.jpg" /></option>
+			</select>
+			<label for="picname">Title:</label>
+			<input type="text" name="name" id="pictitle" placeholder="Name your favourite!" pattern="[a-zA-Z]{3,}" title="Letters only" />
+		</fieldset>
+		<fieldset>
+			<legend>Let us inform you if you're our winner!</legend>
+			<input type="email" name="email" id="email" placeholder="myemail@something.com" title="Are you sure that's you email?" autocomplete="autocomplete" />
+		</fieldset>
+		<input onmouseout=mouseOut(this) id="submit" type="submit" value="Send your choice" /> 
+		<p>Or give it another thought...</p>
+		<input onmouseout=mouseOut(this) id="reset" type="reset" value="Reset form" />
+	</form>
+	<script src="../javascript/form.js" ></script>
+</body>

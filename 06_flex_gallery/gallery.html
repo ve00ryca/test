@@ -1,0 +1,58 @@
+<!--This will be a site with flexible image gallery. Social media symbols & a hamburger menu with some contact form leading to a separate page will be added.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+	<link type="text/css" rel="stylesheet" href="css/gallery.css" />
+	<link type="text/html" href="form/form.html" />
+	<link type="text/css" rel="stylesheet" href="css/nav.css" />
+</head>
+	
+<body>
+	<nav>
+		<button id="form-button" class="button"><a href="form/form.html">Go to Form</a></button>
+	</nav>
+	
+	<div>
+		<h1>BILDER</h1>
+		<p>Some flexible image gallery</p>
+	</div>
+
+	<div id="container"> <!--flex-dir: row-->
+		<div id="first" class="content">
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img onclick=clickImage(this) src="images/lotus.jpg" /><p>Image 1</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /> <p>Image 2</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" /><p>Image 3</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 4</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 5</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" /><p>Image 6</p></div>
+		</div>
+		<div id="second" class="content">
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" /><p>Image 7</p></div>	
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 8</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 9</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 10</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" /><p>Image 11</p></div>
+		</div>
+		<div id="third" class="content">
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 12</p></div>			
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 13</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" /><p>Image 14</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" /><p>Image 15</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 16</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 17</p></div>
+		</div>
+		<div id="fourth" class="content">
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" /><p>Image 18</p></div>		
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 19</p></div>	
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 20</p></div>			
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 21</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" /><p>Image 22</p></div>
+		</div>
+		<!--Javascript for the divs of the flex content on hover-->
+		<script src="javascript/gallery.js"></script>
+	</div>
+		
+</body>
+</html>
