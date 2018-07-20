@@ -1,4 +1,3 @@
-<!--This will be a site with flexible image gallery. Social media symbols & a hamburger menu with some contact form leading to a separate page will be added.-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,10 @@
 </head>
 	
 <body>
-	<nav>
-		<button id="form-button" class="button"><a href="form/form.html">Go to Form</a></button>
+	<!-- Somehow the nav doesn't respond in Firefox and IE when a <button>-tag is defined (it works only in Chrome). So <button> replaced with <div>... -->
+	<nav> 
+		<!-- <button id="button"><a href="form/form.html">Go to Form</a></button> -->
+		<div id="button"><a href="form/form.html">Go to Form</a></div>
 	</nav>
 	
 	<div>
@@ -19,36 +20,36 @@
 		<p>Some flexible image gallery</p>
 	</div>
 
-	<div id="container"> <!--flex-dir: row-->
+	<div id="container"> 
 		<div id="first" class="content">
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img onclick=clickImage(this) src="images/lotus.jpg" /><p>Image 1</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /> <p>Image 2</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" /><p>Image 3</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 4</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 5</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" /><p>Image 6</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" alt="Image 1" /><p>Image 1</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" alt="Image 2" /> <p>Image 2</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" alt="Image 3" /><p>Image 3</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" alt="Image 4" /><p>Image 4</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" alt="Image 5" /><p>Image 5</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" alt="Image 6" /><p>Image 6</p></div>
 		</div>
 		<div id="second" class="content">
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" /><p>Image 7</p></div>	
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 8</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 9</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 10</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" /><p>Image 11</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" alt="Image 7" /><p>Image 7</p></div>	
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" alt="Image 8" /><p>Image 8</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" alt="Image 9" /><p>Image 9</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" alt="Image 10" /><p>Image 10</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" alt="Image 11" /><p>Image 11</p></div>
 		</div>
 		<div id="third" class="content">
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" /><p>Image 12</p></div>			
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 13</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" /><p>Image 14</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" /><p>Image 15</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 16</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 17</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_white.jpg" alt="Image 12" /><p>Image 12</p></div>			
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" alt="Image 13" /><p>Image 13</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black_white.jpg" alt="Image 14" /><p>Image 14</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_green.jpg" alt="Image 15" /><p>Image 15</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" alt="Image 16" /><p>Image 16</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" alt="Image 17" /><p>Image 17</p></div>
 		</div>
 		<div id="fourth" class="content">
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" /><p>Image 18</p></div>		
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" /><p>Image 19</p></div>	
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" /><p>Image 20</p></div>			
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" /><p>Image 21</p></div>
-			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" /><p>Image 22</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_long.jpg" alt="Image 18" /><p>Image 18</p></div>		
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/abstract.png" alt="Image 19" /><p>Image 19</p></div>	
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/stones_black_white.jpg" alt="Image 20" /><p>Image 20</p></div>			
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus.jpg" alt="Image 21" /><p>Image 21</p></div>
+			<div class="inner-div" onmouseover=mouseOver(this) onmouseout=mouseOut(this)><img src="images/lotus_black.jpg" alt="Image 22" /><p>Image 22</p></div>
 		</div>
 		<!--Javascript for the divs of the flex content on hover-->
 		<script src="javascript/gallery.js"></script>

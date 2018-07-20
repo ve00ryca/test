@@ -5,8 +5,10 @@ nav {
 	border-radius: 5px;
 }
 a {
+	margin: auto;
 	color: gray;
 	text-decoration: none;
+	text-align: center;
 	letter-spacing: 0.1em;
 	display: block;
 }
@@ -19,7 +21,7 @@ img {
 	max-width: 100%;
 }
 
-.button {
+#button {
 	width: 8%;
 	margin-left: 46%;
 	padding: 0.5em;
@@ -29,8 +31,9 @@ img {
 	border-radius: 5px;
 }	
 
+
 @media screen and (max-width: 700px){
-	.button{
+	#button{
 		width: 24%;
 	}
 }

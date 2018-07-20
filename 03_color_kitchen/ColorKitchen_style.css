@@ -10,7 +10,7 @@ a:visited{
 
 body {
 	margin: 0;
-	background: url(colorful_dots_on_black.jpg);
+	background: url(images/colorful_dots_on_black.jpg);
 }
 
 #page-header {
@@ -136,7 +136,7 @@ aside {
 			display: inline-block;
 			width: 1em;
 			height: 1em;
-			background-image: url('kisspng-computer-icons-css-sprites-chimichanga-5accbe42bc0ec2.3018086915233674907703.png');
+			background-image: url('images/kisspng-computer-icons-css-sprites-chimichanga-5accbe42bc0ec2.3018086915233674907703.png');
 			/*contain: Resize the background image to make sure the image is fully visible*/
 			background-size: contain;
 			background-repeat: no-repeat;

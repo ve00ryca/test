@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html land="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-
+	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="../css/form.css" />
 	<link type="text/html" rel="stylesheet" href="../gallery.html" />
 	<link type="text/css" rel="stylesheet" href="../css/nav.css" />
 </head>
 	
 <body>
+	<!-- Somehow the nav doesn't respond in Firefox and IE when a button-tag is defined (it works only in Chrome). So <button> replaced with <div>... -->
 	<nav>
-		<button id="home-button" class="button"><a href="../gallery.html">Back to Gallery</a></button>
+		<!-- <button id="button"><a href="../gallery.html">Back to Gallery</a></button> -->
+		<div id="button"><a href="../gallery.html">Back to Gallery</a></div>
 	</nav>
 	
 	<form method="get" action="">
